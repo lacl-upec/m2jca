@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TD de Java avancé, M1"
+title: "TD de Programmation sécurisée, M2"
 ---
 TD de Java avancé, M1
 =====================
