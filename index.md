@@ -2,8 +2,8 @@
 layout: post
 title: "TD de Programmation sécurisée, M2"
 ---
-TD de Java avancé, M1
-=====================
+TD de Programmation sécurisée, M2
+=================================
 
 
 {% for post in site.posts reversed %}
