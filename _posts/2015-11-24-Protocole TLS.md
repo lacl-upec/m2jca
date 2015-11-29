@@ -7,7 +7,7 @@ Protocole TLS
 Utilisation du protocole
 ------------------------
 
-Le protocol TLS, anciennement appelé TLS, permet de :
+Le protocol TLS, anciennement appelé SSL, permet de :
 
 - Assurer la confidentialité d'une connexion réseau 
 - Assurer l'authenticité du serveur et optionnellement du client 
@@ -26,14 +26,14 @@ Pour cela, le protocoles cryptographiques mis en jeu sont :
 - Un algorithme de chiffrement symétrique et un *block cipher mode* (en général le premier est AES)
 - Un fonction pseudo-aléatoire
 
-L'ensemble des algorithmes cryptographiques utilisés ainsi que la taille des clef AES se nomme *cipher suite* (Ex: `TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384`)
+L'ensemble des algorithmes cryptographiques utilisés ainsi que la taille des clef AES se nomme *cipher suite* (Ex: `TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384`)
 
 Handshake
 ---------
 
 - Les parties commencent par décider la version de SSL/TLS et la *cipher suite* à utiliser (c'est le serveur qui choisit parmi ce que propose le client)
 - Ensuite, elles s'authentifient avec des certificats et génèrent un secret partagé, à moins d'utiliser un *session id*/*ticket*
-- Enfin, elles échangent des messages chiffrés en commençant par vérifiet que tout est en ordre à l'aide de MAC
+- Enfin, elles échangent des messages chiffrés en commençant par vérifier que tout est en ordre à l'aide de MAC
 - Le protocole prévoit la possibilité de refaire un handshake, notamment pour changer la clef ou augmenter la complexité cryptographique
 
 SNI
