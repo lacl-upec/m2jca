@@ -32,9 +32,11 @@ Mise en place du système de vérification
 ----------------------------------------
 
 Soit en ligne de commande :
+
 >  `-Djava.security.manager -Djava.security.policy=`*policy file*
 
 Soit de manière programmatique
+
 >  `System.setSecurityManager(new SecurityManager())`
 
 Paramétrer les restrictions, solution 1
